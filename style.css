@@ -1,0 +1,174 @@
+        /* Normalidad */
+        header, article, footer, section, nav, aside {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            max-width: 1200px;
+            background: #4BADE2;
+            margin: 0 auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0 10px;
+        }
+        
+        p, h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Etiqueta de estructuras */
+        header {
+            min-height: 90px;
+            background: #4BADE2;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        article {
+            background: #C7E5F0;
+            padding: 15px;
+            overflow: hidden;
+        }
+        
+        footer {
+            min-height: 4em;
+            background: #37A1C8;
+            padding: 15px;
+        }
+        
+        /* Estilos CSS */
+        h1 {
+            font-size: 2.2em;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #0F2D38;
+            text-align: center;
+            padding: 1em 0.5em;
+            margin-top: 1em;
+            clear: both;
+        }
+        
+        h3 {
+            font-size: 0.8em;
+            color: #f2e3b6;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        p {
+            font-size: 1em;
+            padding: 1em 0;
+            line-height: 1.4em;
+            text-align: justify;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 10px;
+            border: 2.5px solid #000;
+            box-shadow: 6px 6px #3F4B52;
+            box-sizing: border-box;
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 5px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 0.8em;
+            text-align: center;
+            color: #f2e3b6;
+            white-space: nowrap;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Clases */
+        .izq {
+            float: left;
+            margin: 0 1em 1em 0;
+            max-width: 40%;
+        }
+        
+        .der {
+            float: right;
+            margin: 0 0 1em 1em;
+            max-width: 40%;
+        }
+        
+        /* Media Queries para Responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .izq, .der {
+                float: none;
+                display: block;
+                margin: 1em auto;
+                max-width: 80%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            p {
+                font-size: 0.9em;
+            }
+            
+            .izq, .der {
+                max-width: 100%;
+            }
+            
+            img {
+                padding: 5px;
+                box-shadow: 3px 3px #3F4B52;
+            }
+        }
